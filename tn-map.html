@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>County Name Map - TN, KY, MO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="tn-map.css">
+
+  <!-- Firebase SDKs (compat for database, include before your script) -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database-compat.js"></script>
+  <!-- D3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <h1 id="state-title">County Name Map</h1>
+  <div class="state-nav">
+    <button id="prev-state" title="Previous State">&#8592; Prev</button>
+    <span id="state-label"></span>
+    <button id="next-state" title="Next State">Next &#8594;</button>
+  </div>
+  <div id="map-container">
+    <div id="map"></div>
+  </div>
+  <div id="county-names">
+    <h2>Assigned Names and Numbers</h2>
+    <ul class="county-list" id="assigned-list"></ul>
+  </div>
+  <script src="tn-map.js"></script>
+</body>
+</html>

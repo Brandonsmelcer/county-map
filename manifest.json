@@ -1,0 +1,20 @@
+{
+  "name": "County Name Map",
+  "short_name": "CountyMap",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f7fa",
+  "theme_color": "#23DEFF",
+  "icons": [
+    {
+      "src": "https://i.imgur.com/4i57zKD.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/4i57zKD.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
