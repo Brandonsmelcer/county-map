@@ -1460,7 +1460,9 @@ requestPin();
 const states = [
   { id: "TN", name: "Tennessee", geoJsonUrl: "geojson-counties-fips.json", stateFips: "47" },
   { id: "KY", name: "Kentucky", geoJsonUrl: "geojson-counties-fips.json", stateFips: "21" },
-  { id: "MO", name: "Missouri", geoJsonUrl: "geojson-counties-fips.json", stateFips: "29" }
+  { id: "MO", name: "Missouri", geoJsonUrl: "geojson-counties-fips.json", stateFips: "29" },
+  { id: "AR", name: "Arkansas", geoJsonUrl: "geojson-counties-fips.json", stateFips: "05" },
+  { id: "KS", name: "Kansas", geoJsonUrl: "geojson-counties-fips.json", stateFips: "20" }
 ];
 
 let currentStateIndex = 0;
