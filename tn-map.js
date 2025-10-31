@@ -1419,6 +1419,31 @@
 
 
 
+// --- Dark Mode Toggle ---
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.querySelector('.theme-icon');
+const body = document.body;
+
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+if (currentTheme === 'dark') {
+  body.classList.add('dark-mode');
+  themeIcon.textContent = '☀️';
+}
+
+// Toggle theme
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  
+  if (body.classList.contains('dark-mode')) {
+    themeIcon.textContent = '☀️';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    themeIcon.textContent = '🌙';
+    localStorage.setItem('theme', 'light');
+  }
+});
+
 // --- Firebase Initialization ---
 const firebaseConfig = {
   apiKey: "AIzaSyD6mwudmKbqTlpktEuQJygovz8HuBDz03A",
